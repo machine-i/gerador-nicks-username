@@ -5,7 +5,7 @@ import clipboard as c
 psg.theme('DarkBlue1')
 
 lyt = [
-    [psg.Text('Clique em gerar', size=(30, 1))],
+    [psg.Text('Clique em gerar e depois em copiar', size=(30, 1))],
     [psg.Button('gerar'), psg.Button('copiar')],
     [psg.Text(key='nicks')]
 ]
