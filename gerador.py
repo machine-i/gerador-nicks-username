@@ -6,7 +6,7 @@ psg.theme('DarkBlue1')
 
 lyt = [
     [psg.Text('Clique em gerar e depois em copiar', size=(30, 1))],
-    [psg.Button('gerar'), psg.Button('copiar')],
+    [psg.Button('gerar'), psg.Button('copiar'), psg.Button('fechar')],
     [psg.Text(key='nicks')]
 ]
 
@@ -23,4 +23,8 @@ while True:
         wind['nicks'].update(nick)
     if e == 'copiar':
         c.copy(nick)
+        nick = nick + ' (copiado)' if not ' (copiado)' in nick else nick
+        wind['nicks'].update(nick)
+    if e == 'fechar':
+        break
 wind.close()
