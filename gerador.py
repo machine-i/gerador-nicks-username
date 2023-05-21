@@ -23,7 +23,7 @@ while True:
         wind['nicks'].update(nick)
     if e == 'copiar':
         c.copy(nick)
-        nick = nick + ' (copiado)' if not ' (copiado)' in nick else nick
+        nick = nick + ' (copiado) (>‿◠)' if not ' (copiado) (>‿◠)' in nick else nick
         wind['nicks'].update(nick)
     if e == 'fechar':
         break
